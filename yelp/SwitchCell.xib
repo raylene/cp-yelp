@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="SwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZC-2C-WNq">
+                        <rect key="frame" x="18" y="19" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDN-M4-1hW">
+                        <rect key="frame" x="265" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="JBc-1k-fRw"/>
+                            <constraint firstAttribute="width" constant="40" id="RHX-cY-bOB"/>
+                            <constraint firstAttribute="width" constant="40" id="g0K-ZG-JsV"/>
+                            <constraint firstAttribute="height" constant="24" id="zF4-pn-wBl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JBc-1k-fRw"/>
+                                <exclude reference="RHX-cY-bOB"/>
+                                <exclude reference="g0K-ZG-JsV"/>
+                                <exclude reference="zF4-pn-wBl"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="switchValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="wjO-Kf-ZNN"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="OZC-2C-WNq" secondAttribute="centerY" id="9Ed-gd-LT9"/>
+                    <constraint firstAttribute="centerY" secondItem="UDN-M4-1hW" secondAttribute="centerY" id="HHi-re-411"/>
+                    <constraint firstAttribute="bottom" secondItem="UDN-M4-1hW" secondAttribute="bottom" constant="8" id="HQZ-B9-aSB"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UDN-M4-1hW" secondAttribute="bottom" constant="12" id="I81-hP-UOy"/>
+                    <constraint firstAttribute="centerY" secondItem="UDN-M4-1hW" secondAttribute="centerY" id="OHp-eB-Wrq"/>
+                    <constraint firstItem="UDN-M4-1hW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Txi-9u-8bT"/>
+                    <constraint firstItem="UDN-M4-1hW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="UND-AC-wxv"/>
+                    <constraint firstAttribute="trailing" secondItem="UDN-M4-1hW" secondAttribute="trailing" constant="8" id="Wx8-QJ-8uv"/>
+                    <constraint firstItem="UDN-M4-1hW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="XRG-XZ-4VI"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UDN-M4-1hW" secondAttribute="bottom" constant="12" id="Y7N-vQ-ura"/>
+                    <constraint firstAttribute="trailing" secondItem="UDN-M4-1hW" secondAttribute="trailing" constant="8" id="bPp-SR-wFc"/>
+                    <constraint firstAttribute="trailing" secondItem="UDN-M4-1hW" secondAttribute="trailing" constant="6" id="iWT-2j-FmQ"/>
+                    <constraint firstItem="OZC-2C-WNq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="pwd-Qx-aeU"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UDN-M4-1hW" secondAttribute="bottom" constant="6" id="sIf-cc-wc2"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HHi-re-411"/>
+                        <exclude reference="HQZ-B9-aSB"/>
+                        <exclude reference="I81-hP-UOy"/>
+                        <exclude reference="OHp-eB-Wrq"/>
+                        <exclude reference="Txi-9u-8bT"/>
+                        <exclude reference="Wx8-QJ-8uv"/>
+                        <exclude reference="XRG-XZ-4VI"/>
+                        <exclude reference="Y7N-vQ-ura"/>
+                        <exclude reference="bPp-SR-wFc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="OZC-2C-WNq" id="qP3-wY-0v9"/>
+                <outlet property="toggleSwitch" destination="UDN-M4-1hW" id="CaA-J0-tH6"/>
+            </connections>
+            <point key="canvasLocation" x="-585" y="-38"/>
+        </tableViewCell>
+    </objects>
+</document>
