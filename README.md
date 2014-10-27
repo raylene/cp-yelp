@@ -34,3 +34,8 @@ NOTE: I don't think I got the filter page to look very good in the end :( The in
 ### Walkthrough
 
 ![Video Walkthrough](http://i.giphy.com/5xaOcLOfP3GcqqLxwCA.gif)
+
+
+### Questions
+
+I tried to play with different UITableView section/row configurations to implement the collapsed/selector-like views in the yelp app (http://i.imgur.com/rczfg7kl.png). Some ideas I came across involved creating custom rows, and inserting or reloading entire sections/rows upon interaction.  I'd love to hear the best/recommended ways to implement these are.
